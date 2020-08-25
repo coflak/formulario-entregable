@@ -1,0 +1,16 @@
+<table class="table table-striped table-dark container">
+    <thead>
+        <td> Identificacion </td>
+        <td> Nombre</td>
+        <td> Salario</td>
+        <td> Fecha</td>
+        <tbody>
+            <tr *ngFor="let empleados of lst">
+                <td>{{ empleados.ide }}</td>
+                <td>{{ empleados.nom }}</td>
+                <td>{{ empleados.sal | currency }}</td>
+                <td>{{ empleados.fecha }}</td>
+            </tr>
+        </tbody>
+</table>
+

@@ -1,0 +1,15 @@
+<table class="table table-striped table-dark container">
+    <thead>
+        <td> Identificacion</td>
+        <td> Nombre</td>
+        <td> Cupo</td>
+      <tbody>
+        <tr *ngFor="let proveedor of lst">
+            <td>{{proveedor.idep }}</td>
+            <td>{{ proveedor.nomp }}</td>
+            <td>{{ proveedor.cupo | currency }}</td>
+        </tr>
+    </tbody>
+</table>
+
+
